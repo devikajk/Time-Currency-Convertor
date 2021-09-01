@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timecurrency1.convert.convertController">
+   <center>
+      <SplitPane dividerPositions="0.3" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane layoutY="145.0" prefHeight="160.0" prefWidth="200.0" style="-fx-background-color: #aec6cf;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="tomain" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#tomain" prefHeight="23.0" prefWidth="60.0" text="Back">
+                           <font>
+                              <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+                           </font></Button>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CURRENCY CONVERTER" wrappingWidth="167.64401245117188">
+                           <font>
+                              <Font name="HelveticaNeueLTStd-BlkEx" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: white;">
+               <children>
+                  <ChoiceBox fx:id="frombox" layoutX="70.0" layoutY="35.0" prefHeight="25.0" prefWidth="140.0" />
+                  <ChoiceBox fx:id="tobox" layoutX="249.0" layoutY="35.0" prefHeight="25.0" prefWidth="140.0" />
+                  <Label layoutX="21.0" layoutY="40.0" text="From">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="222.0" layoutY="40.0" text="To">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="fromvalue" layoutX="185.0" layoutY="73.0" onMouseClicked="#fromlabelchange" prefHeight="25.0" prefWidth="75.0" />
+                  <Button fx:id="convert" layoutX="169.0" layoutY="113.0" mnemonicParsing="false" onAction="#conversion" text="Convert">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+                     </font></Button>
+                  <Label layoutX="61.0" layoutY="76.0" text="Enter value">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fromlabel" layoutX="269.0" layoutY="78.0">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextFlow layoutX="30.0" layoutY="156.0" prefHeight="234.0" prefWidth="353.0">
+                     <children>
+                        <Text fx:id="maintext" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="361.4840393066406">
+                           <font>
+                              <Font name="HelveticaNeue-HeavyExt" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

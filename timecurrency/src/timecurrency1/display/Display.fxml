@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timecurrency1.display.displayController">
+   <center>
+      <SplitPane dividerPositions="0.3" minWidth="100.0" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="100.0" prefHeight="383.0" prefWidth="314.0" style="-fx-background-color: #aec6cf;">
+               <children>
+                  <Button fx:id="displaytomain" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#displaytomain" text="Back" AnchorPane.leftAnchor="14.0">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="11.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="11.0" layoutY="45.0" prefHeight="34.0" prefWidth="153.0" text="LOCAL TIME: " textFill="WHITE">
+                     <font>
+                        <Font name="HelveticaNeueLTStd-BlkEx" size="15.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="time" layoutX="14.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="158.13671875" AnchorPane.rightAnchor="3.86328125">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView disable="true" fitHeight="213.0" fitWidth="157.0" layoutX="9.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/timezone-map5.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="21.0" layoutY="35.0" prefHeight="20.0" prefWidth="103.0" text="COUNTRY" textFill="#aec6cf">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="16.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="countrybox" layoutX="143.0" layoutY="32.0" prefHeight="25.0" prefWidth="153.0" />
+                  <Text fx:id="countryname" layoutX="32.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.49798583984375">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="countrycapital" fill="#aec6cf" layoutX="138.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="countrycurrency" fill="#aec6cf" layoutX="138.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="countrytimezone" fill="#aec6cf" layoutX="143.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="15.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="displaybutton" layoutX="324.0" layoutY="33.0" mnemonicParsing="false" onAction="#setvalues" prefHeight="23.0" prefWidth="76.0" text="Display">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="32.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capital">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currency">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Zone(s)">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <Blend />
+               </effect></AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

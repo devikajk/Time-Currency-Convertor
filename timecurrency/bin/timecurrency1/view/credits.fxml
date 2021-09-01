@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #aec6cf;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="79.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PBL PROJECT : OOPM">
+               <font>
+                  <Font name="HelveticaNeue-HeavyExt" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="171.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Made by :">
+               <font>
+                  <Font name="HelveticaNeue-HeavyExt" size="14.0" />
+               </font>
+            </Text>
+            <TextFlow layoutX="112.0" layoutY="78.0" prefHeight="122.0" prefWidth="205.0" textAlignment="CENTER">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Snehal Mane Devika Nair Snehal Kamble" textAlignment="CENTER" wrappingWidth="190.0">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+         </children></Pane>
+   </center>
+</BorderPane>

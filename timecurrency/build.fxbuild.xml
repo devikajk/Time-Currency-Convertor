@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<anttasks:AntTask xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:anttasks="http://org.eclipse.fx.ide.jdt/1.0" buildDirectory="C:\Users\sneha\Desktop">
+  <deploy packagingFormat="exe">
+    <application name="timecurrency" mainclass="timecurrency1.main"/>
+    <info title="Time and Currency Converter" vendor="mane"/>
+  </deploy>
+  <signjar/>
+</anttasks:AntTask>

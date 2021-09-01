@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="timecurrency1.view.mainmenucontroller">
+   <right>
+      <FlowPane hgap="120.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: white;" vgap="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goDisplay" prefHeight="40.0" prefWidth="170.0" text="DISPLAY">
+               <font>
+                  <Font name="HelveticaNeue-HeavyExt" size="19.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="40.0" top="20.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="14.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="CONVERTER" textFill="#aec6cf">
+               <font>
+                  <Font name="HelveticaNeue-HeavyExt" size="24.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <FlowPane hgap="50.0" prefHeight="86.0" prefWidth="260.0">
+               <children>
+                  <Button fx:id="timezone" mnemonicParsing="false" onAction="#goTimeConvert" prefHeight="40.0" prefWidth="170.0" text="TIMEZONE">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="19.0" />
+                     </font>
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" />
+                     </FlowPane.margin>
+                  </Button>
+                  <Button fx:id="currrency" mnemonicParsing="false" onAction="#goCurrency" prefHeight="40.0" prefWidth="170.0" text="CURRENCY">
+                     <font>
+                        <Font name="HelveticaNeue-HeavyExt" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="40.0" top="-30.0" />
+               </padding>
+            </FlowPane>
+            <Button fx:id="credits" mnemonicParsing="false" onAction="#showcredits" style="-fx-background-color: transparent;" text="CREDITS" textFill="#aec6cf">
+               <FlowPane.margin>
+                  <Insets bottom="-70.0" left="235.0" />
+               </FlowPane.margin>
+               <font>
+                  <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="80.0" top="80.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </FlowPane>
+   </right>
+   <left>
+      <SplitPane prefHeight="200.0" prefWidth="204.0" style="-fx-background-color: #aec6cf;" BorderPane.alignment="CENTER">
+         <items>
+            <BorderPane prefHeight="398.0" prefWidth="86.0">
+               <top>
+                  <Text fill="WHITE" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME AND CURRENCY CONVERTER" wrappingWidth="160.13671875" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="HelveticaNeueLTStd-BlkEx" size="19.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets top="15.0" />
+                     </BorderPane.margin>
+                  </Text>
+               </top>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <left>
+                  <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="243.0" fitWidth="223.0" layoutX="-11.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/PBL/thumbnailclock-01.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="10.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="because time is money">
+                           <font>
+                              <Font name="HelveticaNeue-HeavyExt" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </left>
+            </BorderPane>
+         </items>
+      </SplitPane>
+   </left>
+</BorderPane>
